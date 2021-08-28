@@ -1,0 +1,49 @@
+<html>
+  <head>
+  <style>
+    button {
+        height: 44px;
+        width: 174px;
+        text-transform: uppercase;
+        border: 1px solid black;
+        border-radius: 14px;
+        margin: 10px;
+        font-weight: bold;
+        font-size: 17px;
+        color: gray;
+    }
+
+    button:after {
+        content: '';
+        z-index: 14;
+        top: 9px;
+        left: 9px;
+        right: 5px;
+        bottom: 5px;
+        height: 58px;
+        width: 187px;
+        position: absolute;
+        border: 2px solid black;
+        border-radius: 18px;
+    }
+
+    button:before {
+        content: '';
+        z-index: 14;
+        top: 13px;
+        left: 13px;
+        right: 5px;
+        bottom: 5px;
+        height: 44px;
+        width: 174px;
+        position: absolute;
+        border: 5px solid lightgrey;
+        border-radius: 18px;
+    }
+</style>
+  </head>
+  <body>
+    <button>download</button>
+  </body>
+</html>
+
