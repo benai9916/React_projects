@@ -95,4 +95,5 @@ var startWord = "hit"
 var endWord = "cog"
 var words = ["hot","dot","dog","lot","log","cog"]
 
-shortTransform(startWord, endWord, words)
+var result = shortTransform(startWord, endWord, words)
+console.log(result)
