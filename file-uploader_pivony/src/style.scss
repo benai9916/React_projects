@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.file-upload {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+
+  &__wrapper {
+    width: 129px;
+    height: 129px;
+    background-color: rgb(144, 211, 144);
+    border-radius: 99px;
+    margin: 30px auto;
+    position: relative;
+
+    &::before {
+      content: '';
+      width: 146px;
+      height: 146px;
+      border: 2px dashed rgb(144, 211, 144);
+      position: absolute;
+      left: -11px;
+      top: -11px;
+      border-radius: 99px;
+    }
+  }
+
+  &__uploader {
+    margin: 0 auto;
+
+    svg {
+      height: 54px;
+      width: 54px;
+      color: white;
+      margin-top: 34px;
+    }
+  }
+
+  span {
+    font-size: 18px;
+  }
+
+  &__filename {
+    height: 20px;
+  }
+
+  &__progress {
+    margin-top: 50px;
+    justify-content: center;
+    display: inline-grid;
+
+    span {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__option {
+    display: flex;
+
+    p {
+      cursor: pointer;
+      margin-top: 40px;
+      flex-grow: 1;
+      text-decoration: underline;
+    }
+  }
+
+  &__header {
+    p {
+      font-size: 18px;
+    }
+
+    input, label {
+      cursor: pointer;
+    }
+
+    &--checkbox {
+      display: flex;
+      justify-content: space-between;
+      width: 130px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 110px;
+    }
+  }
+
+  &__select-wrapper {
+    margin-top: 40px;
+  }
+
+  &__custom-select {
+    p {
+      font-size: 22px;
+      margin-bottom: 14px;
+    }
+
+    select {
+      width: 240px;
+      height: 40px;
+      padding-left: 20px;
+      background-color: rgb(207, 200, 200);
+      border-radius: 3px;
+      border: none;
+    }
+  }
+
+  &__submit {
+    margin-top: 100px;
+
+    p {
+      font-size: 22px;
+    }
+
+    button {
+      width: 110px;
+      height: 38px;
+      border: none;
+      background-color: blueviolet;
+      color: white;
+      border-radius: 6px;
+    }
+  }
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  padding-right: 30%;
+  padding-bottom: 40px;
+  cursor: pointer;
+  color: blueviolet;
+
+  svg {
+    padding-right: 10px;
+    height: 20px;
+    width: 20px;
+  }
+}
