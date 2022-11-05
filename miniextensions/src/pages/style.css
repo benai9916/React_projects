@@ -1,0 +1,27 @@
+
+.homepage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  flex-direction: column;
+  gap: 20px;
+}
+.box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 30px;
+  width: 360px;
+}
+button {
+  cursor: pointer;
+  margin: 10px;
+}
+input {
+  margin: 10px;
+}
+.logout {
+  position: absolute;
+  right: 10px;
+  top: 20px;
+}
